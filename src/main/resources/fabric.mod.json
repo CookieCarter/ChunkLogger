@@ -3,7 +3,7 @@
 	"id": "chunklogger",
 	"version": "${version}",
 	"name": "ChunkLogger",
-	"description": "A simple mod which will log bedrock in the nether to a file. Meant to be used in conjunction with https://github.com/19MisterX98/Nether_Bedrock_Cracker. Use /logbedrock",
+	"description": "A simple mod which will log bedrock in the Nether to a file. Meant to be used in conjunction with a bedrock seed cracker.\n /logbedrock",
 	"authors": [
 		"CookieCarter"
 	],
