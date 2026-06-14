@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "chunklogger",
+	"version": "${version}",
+	"name": "ChunkLogger",
+	"description": "A simple mod which will log bedrock in the nether to a file. Meant to be used in conjunction with https://github.com/19MisterX98/Nether_Bedrock_Cracker. Use /logbedrock",
+	"authors": [
+		"CookieCarter"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chunklogger/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cookie.chunklogger.ChunkLogger"
+		],
+		"client": [
+			"cookie.chunklogger.client.ChunkLoggerClient"
+		]
+	},
+	"mixins": [
+		"chunklogger.mixins.json",
+		{
+			"config": "chunklogger.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
